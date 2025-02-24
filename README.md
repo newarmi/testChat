@@ -26,10 +26,7 @@ npm run build
 
 ### Server
 
-```sh
-yarn
-```
 #### Start
 ```sh
-npm run test
+npm run server:start
 ```
