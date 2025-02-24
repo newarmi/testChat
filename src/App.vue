@@ -15,7 +15,6 @@ viewport.addEventListener('resize', updateVH);
 
 <template>
   <div class="chat">
-    {{ h }}
     <ListChat class="chat__list"/>
     <InputAreaChat @focus="updateVH" class="chat__input"/>
   </div>
