@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "server:start": "cd server && yarn && npm run test",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },

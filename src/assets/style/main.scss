@@ -1,5 +1,5 @@
-@use "./reset.scss" as *;
-@use './base.scss' as *;
+@use "reset" as *;
+@use 'base' as *;
 
 .fade-right {
   &-enter-active,

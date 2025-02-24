@@ -30,7 +30,7 @@ watch(messagesList.value, async () => {
     <div
         class="list-message__area"
     >
-      <div v-if="!messagesList.length">
+      <div class="list-message__no-message" v-if="!messagesList.length">
         Нет сообщений
       </div>
       <MessageItemChat
@@ -55,5 +55,10 @@ watch(messagesList.value, async () => {
     justify-content: flex-end;
   }
 
+  &__no-message {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+  }
 }
 </style>

@@ -3,7 +3,7 @@ import {reactive, ref, watch} from "vue";
 import {useWebSocket} from "@/composble/useWebsoket.js";
 
 export const useChatStore = defineStore('chat', () => {
-    const {emitter, send, close, connect} = useWebSocket('ws://192.168.0.186:8000', 'type')
+    const {emitter, send, close, connect} = useWebSocket(import.meta.env.VITE_WEBSOKET_SERVER, 'type')
     const isTyping = ref(false)
     const messagesList = reactive([])
 
