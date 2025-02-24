@@ -1,0 +1,29 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --white: #ffffff;
+  --black: #0F0F10;
+  --blue: #1397FB;
+  --gray: #1C1D1E;
+  --gray-light: #343637;
+  --fz: 16px;
+  --icon-size: 26px;
+}
+
+body {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+
+  touch-action: none;
+
+  color: var(--white);
+
+  background: var(--gray);
+
+  font-family: Arial;
+  font-size: var(--fz);
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+

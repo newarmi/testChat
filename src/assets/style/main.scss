@@ -1,0 +1,32 @@
+@use "./reset.scss" as *;
+@use './base.scss' as *;
+
+.fade-right {
+  &-enter-active,
+  &-leave-active {
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    will-change: transform, opacity;
+  }
+
+  &-enter-from,
+  &-leave-to {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+}
+
+@keyframes breath {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: var(--gray)
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+#app{
+  height: 100%;
+}
